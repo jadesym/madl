@@ -1,5 +1,5 @@
 {
-  "name": "madl",
+  "name": "@madl/core",
   "version": "0.0.1",
   "description": "A library for modeling data for external and internal APIs",
   "main": "index.js",
@@ -11,6 +11,17 @@
     "api",
     "data"
   ],
-  "author": "",
-  "license": "ISC"
+  "author": "Kevin Fu",
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jadesym/madl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jadesym/madl/issues"
+  },
+  "homepage": "https://github.com/jadesym/madl#readme"
 }
