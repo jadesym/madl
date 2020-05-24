@@ -1,5 +1,5 @@
 {
-  "name": "modelle",
+  "name": "madl",
   "version": "0.0.1",
   "description": "A library for modeling data for external and internal APIs",
   "main": "index.js",

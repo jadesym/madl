@@ -1,2 +1,2 @@
-# modelle
+# madl
 A library for modeling data for external and internal APIs
