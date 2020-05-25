@@ -13,6 +13,10 @@
   ],
   "author": "Kevin Fu",
   "license": "MIT",
+  "engines": {
+    "node": ">=12.6.1",
+    "npm": ">=6.13.4"
+  },
   "directories": {
     "test": "test"
   },
