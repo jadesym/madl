@@ -1,1 +1,5 @@
+# Ignore external dependencies
 node_modules
+
+# Ignore auto-generated files
+/lib
