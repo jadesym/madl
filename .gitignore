@@ -3,3 +3,9 @@ node_modules
 
 # Ignore built source code
 dist
+
+# Ignore code coverage directories
+coverage
+
+# Temporary files generated during testing
+test/tmp
