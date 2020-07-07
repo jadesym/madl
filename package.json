@@ -6,11 +6,13 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "build-watch": "tsc --watch",
     "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "tslint -p tsconfig.json",
+    "lint": "eslint src/ --ext .ts",
     "postversion": "git push && git push --tags",
+    "precommit": "npm-run-all --parallel build lint test",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
+    "prepublishOnly": "npm run precommit",
     "test": "jest --config jestconfig.json",
     "version": "npm run format && git add -A src"
   },
@@ -22,8 +24,8 @@
   "author": "Kevin Fu",
   "license": "MIT",
   "engines": {
-    "node": ">=12.6.1",
-    "npm": ">=6.13.4"
+    "node": "12.16.1",
+    "npm": "6.14.5"
   },
   "directories": {
     "test": "test"
@@ -41,11 +43,16 @@
   "homepage": "https://github.com/jadesym/madl#readme",
   "devDependencies": {
     "@types/jest": "25.2.3",
+    "@typescript-eslint/eslint-plugin": "3.6.0",
+    "@typescript-eslint/parser": "3.6.0",
+    "eslint": "7.4.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.20.3",
     "jest": "26.0.1",
+    "npm-run-all": "4.1.5",
     "prettier": "2.0.5",
     "ts-jest": "26.0.0",
-    "tslint": "6.1.2",
-    "tslint-config-prettier": "1.18.0",
     "typescript": "3.9.3"
   }
 }

@@ -1,5 +1,5 @@
-# Ignore external dependencies
+# Ignore built dependencies
 node_modules
 
-# Ignore auto-generated files
-/lib
+# Ignore built source code
+dist
